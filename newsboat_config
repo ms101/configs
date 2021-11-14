@@ -1,0 +1,29 @@
+# config for newsboat
+browser                 firefox
+auto-reload             yes
+cleanup-on-quit         yes
+refresh-on-startup      yes
+max-items               30
+
+color background          white         default
+color listnormal          color240      default
+color listfocus           color32       default
+color listnormal_unread   color15       default
+color listfocus_unread    color32       default bold
+#color info                color240     black   bold
+color info                color246      color237
+color article             white         black
+
+# light blue:   32
+# gray:         237
+
+bind-key        "RIGHT" open
+bind-key        "LEFT"  quit
+#bind-key       ENTER   open-in-browser-and-mark-read
+#bind-key       O       open
+
+ignore-article "*" "title =~ \"Sponsor\""
+ignore-article "*" "title =~ \"Advertisement\""
+ignore-mode "display"
+
+#articlelist-format "%4i %f %D  %?T?|%-17T| ?%t"
